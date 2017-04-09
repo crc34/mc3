@@ -1,9 +1,10 @@
 #include "mcmc.h"
 #include <random>
 
- bool accept(const double propLL, const double currentLL)
+std::default_random_engine generator;
+std::uniform_real_distribution<double> distribution(0.0, 1.0);
+
+bool accept(const double propLL, const double currentLL)
 {
-
-    return false;
-
+    return distribution(generator) < propLL - currentLL;
 }
