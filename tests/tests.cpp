@@ -2,9 +2,10 @@
 #define CATCH_CONFIG_MAIN
 #include <catch.hpp>
 #include "mcmc.h"
-TEST_CASE("a", "[]")
+
+TEST_CASE("accept", "[]")
 {
-    REQUIRE(true);
+    REQUIRE(accept(-1.0, -2.0));
 
 }
 
