@@ -15,7 +15,6 @@ std::default_random_engine generator;
 
 TEST_CASE("accept", "[]")
 {
-
     const double n = 10000;
     vector<bool> draws(n, false);
 
@@ -48,3 +47,8 @@ TEST_CASE("accept", "[]")
 }
 
 
+TEST_CASE("step", "[]")
+{
+
+    REQUIRE(false);
+}
